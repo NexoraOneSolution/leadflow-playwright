@@ -1,6 +1,18 @@
-# Lead Generation + Messaging + Client Conversation
+# LeadFlow Playwright
 
-A Playwright-powered starter repo for collecting public business leads, organizing them into a clean database, and preparing personalized outreach messages.
+Playwright-powered toolkit for local business lead research, CSV lead databases, and personalized outreach messaging.
+
+Suggested GitHub repo name:
+
+```text
+leadflow-playwright
+```
+
+Suggested GitHub description:
+
+```text
+Playwright-powered toolkit for local business lead research, CSV lead databases, and personalized outreach messaging.
+```
 
 ## Coverage Area
 
@@ -338,7 +350,7 @@ This folder is ready to become a GitHub repository. After installing and logging
 
 ```bash
 gh auth login
-gh repo create lead-generation-messaging --public --source . --remote origin --push
+gh repo create leadflow-playwright --public --description "Playwright-powered toolkit for local business lead research, CSV lead databases, and personalized outreach messaging." --source . --remote origin --push
 ```
 
 Run that command from inside the `Lead` folder.

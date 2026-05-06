@@ -1,7 +1,7 @@
 {
-  "name": "lead-generation-messaging",
+  "name": "leadflow-playwright",
   "version": "1.0.0",
-  "description": "Playwright-powered lead generation, lead database, and outreach messaging toolkit.",
+  "description": "Playwright-powered toolkit for local business lead research, CSV lead databases, and personalized outreach messaging.",
   "private": true,
   "type": "module",
   "scripts": {
@@ -14,10 +14,12 @@
   },
   "keywords": [
     "lead-generation",
+    "leadflow",
     "playwright",
     "outreach",
     "crm",
-    "surat"
+    "surat",
+    "business-leads"
   ],
   "author": "",
   "license": "MIT",
