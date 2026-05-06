@@ -1,0 +1,30 @@
+{
+  "name": "lead-generation-messaging",
+  "version": "1.0.0",
+  "description": "Playwright-powered lead generation, lead database, and outreach messaging toolkit.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect:maps": "tsx src/collectors/googleMaps.ts",
+    "message": "tsx scripts/generate-message.ts",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "typecheck": "tsc --noEmit",
+    "install:browsers": "playwright install chromium"
+  },
+  "keywords": [
+    "lead-generation",
+    "playwright",
+    "outreach",
+    "crm",
+    "surat"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

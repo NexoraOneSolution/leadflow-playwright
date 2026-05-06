@@ -1,0 +1,2 @@
+id,business_name,category,sub_category,contact_person,phone_number,alternate_phone,email,website,address,area,city,state,pincode,google_maps_link,latitude,longitude,rating,review_count,source,source_url,business_type,gst_number,instagram_link,facebook_link,linkedin_link,whatsapp_number
+lead_0001,Demo Cafe,Cafe,Coffee Shop,Owner,9876543210,,hello@example.com,https://example.com,"Ring Road, Surat",Ring Road,Surat,Gujarat,395002,https://maps.google.com,,,,4.5,120,Manual Research,https://maps.google.com,service,,https://instagram.com/demo,,,9876543210
