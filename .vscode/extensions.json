@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "ms-playwright.playwright",
+    "github.vscode-github-actions",
+    "mechatroner.rainbow-csv",
+    "yzhang.markdown-all-in-one"
+  ]
+}

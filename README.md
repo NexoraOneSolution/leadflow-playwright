@@ -32,19 +32,71 @@ Top 5 additional cities to cover:
 
 - Playwright setup for browser-based lead research
 - Google Maps collector starter script
+- Chromium browser automation through Playwright
 - CSV lead database format
+- CSV export helper with stable lead fields
 - Outreach message template engine
 - Sample lead data
 - Tests for CSV export and message rendering
+- GitHub Actions CI config
+- VS Code extension recommendations
 - Documentation for sources, categories, workflow, and database fields
 
-## Quick Start
+## Installation
 
 ```bash
 npm install
 npm run install:browsers
+```
+
+This installs the Node dependencies and downloads the Playwright Chromium browser.
+
+Optional: install all Playwright browsers:
+
+```bash
+npm run install:browsers:all
+```
+
+## Config Files
+
+Main files used to run this project:
+
+| File | Purpose |
+| --- | --- |
+| `package.json` | npm scripts, project name, dependencies, and Playwright commands |
+| `playwright.config.ts` | Playwright test config, Chromium setting, reporters, and traces |
+| `tsconfig.json` | TypeScript compiler settings |
+| `.env.example` | Example local environment values |
+| `.gitignore` | Keeps dependencies, reports, generated CSVs, and secrets out of git |
+| `.github/workflows/ci.yml` | GitHub Actions workflow for typecheck and tests |
+| `.vscode/extensions.json` | Recommended VS Code add-ons |
+
+## Run Checks
+
+```bash
+npm run typecheck
 npm test
 ```
+
+Open the Playwright HTML report after a test run:
+
+```bash
+npm run show-report
+```
+
+Run tests in headed Chromium:
+
+```bash
+npm run test:headed
+```
+
+Open Playwright's interactive test UI:
+
+```bash
+npm run test:ui
+```
+
+## Generate Outreach Message
 
 Create a message from sample lead data:
 
@@ -52,10 +104,41 @@ Create a message from sample lead data:
 npm run message -- --name "Demo Cafe" --category "Cafe" --city "Surat" --person "Owner"
 ```
 
+Custom sender name:
+
+```bash
+npm run message -- --name "Demo Cafe" --category "Cafe" --city "Surat" --person "Owner" --from "NexoraOne"
+```
+
+## Collect Leads With Chromium
+
 Collect leads from Google Maps:
 
 ```bash
 npm run collect:maps -- --query "cafes in Surat" --limit 10 --out data/leads.csv
+```
+
+Watch Chromium while it runs:
+
+```bash
+npm run collect:maps:headed -- --query "gyms in Ahmedabad" --limit 20 --out data/ahmedabad-gyms.csv
+```
+
+The CSV export is written to the `--out` path. Generated files like `data/leads.csv` are ignored by git so private lead data does not get pushed by mistake.
+
+## Playwright Add-ons
+
+Recommended tools:
+
+- Playwright VS Code extension
+- GitHub Actions extension for CI visibility
+- ESLint extension, if linting is added later
+- CSV viewer extension for lead database review
+
+Generate Playwright selector/code experiments:
+
+```bash
+npm run codegen -- "https://www.google.com/maps"
 ```
 
 Use browser automation responsibly. Only collect publicly available business information, respect platform terms, avoid aggressive request volume, and do not send unsolicited spam.
